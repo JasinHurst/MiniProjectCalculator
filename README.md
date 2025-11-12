@@ -1,2 +1,5 @@
 # MiniProjectCalculator
-# JS Calculator A simple calculator built with HTML, CSS, and vanilla JavaScript.   Handles basic arithmetic operations and updates the display dynamically.
+
+A mini JavaScript calculator with a styled form — built using **HTML**, **CSS**, and **native JS**.
+
+![Screenshot of MiniProjectCalculator](PersonalCalculator.png)
