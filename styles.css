@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --text: white;
+}
+
+body {
+    background-color: rgb(66, 64, 61);
+    color: var(--text);
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+}
+
+input::placeholder {
+    color: var(--text);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 100px;
+    gap: 25%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 25px;
+  width: 400px;
+  height: 575px; 
+  border: 2px ridge #ff6600;
+  border-radius: 8px;
+  background-color: #272727;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  margin-right: 35px;
+  font-size: large;
+  margin-left: 4%;
+}
+
+input {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(239, 6, 6, 0.8);
+    width: 100%;
+}
+
+input::placeholder {
+    color: black;
+}
+
+textarea {
+    box-shadow: 0 0 10px rgba(239, 6, 6, 0.8);
+    border-radius: 5px;
+    width: 100%;
+    padding: 100px;
+}
+
+.form-btn {
+    box-shadow: 0 0 10px rgba(239, 6, 6, 0.8);
+    width: 20%;
+    align-self: flex-end;
+    font-size: smaller;
+    border-radius: 5px;
+}
+
+.form-group {
+    display:flex;
+    justify-content: space-between;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 2rem;
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 400% 400%;
+  -webkit-text-fill-color: transparent;
+  animation: rainbowShift 6s ease infinite;
+}
+@keyframes rainbowShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.calculator  {
+    margin-left: 35px;
+    border-style:ridge;
+    width: 50%;
+    border-style:ridge;
+    border-color: #ff6600;
+    border-radius: 5px;
+    height: 575px; 
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+    flex: 1;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #ff6600;
+  margin: 10px 0;
+  box-shadow: 5px 5px 10px rgba(239, 6, 6, 0.8);
+}
+
+button {
+    padding: 8px;
+    font-size: .8rem;
+    box-shadow: 5px 5px 10px rgba(239, 6, 6, 0.8);
+}
+
+.display {
+  background: #000;
+  color: #0f0;
+  font-size: 2rem;
+  text-align: leftt;
+  padding: 15px;
+  border: 2px inset #555;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 15px rgba(239, 6, 6, 0.8);
+}
+
+.output {
+  overflow-x: auto;  
+}
